@@ -39,8 +39,7 @@ export default class Twitch extends Component {
         playsinline: playsinline,
         autoplay: this.props.playing,
         muted: this.props.muted,
-        // https://github.com/CookPete/react-player/issues/733#issuecomment-549085859
-        controls: isChannel ? true : controls,
+        controls,
         time: parseStartTime(url),
         ...config.options
       })
